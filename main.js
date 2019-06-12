@@ -2,7 +2,7 @@ const quotes = 'https://api.myjson.com/bins/u1359';
 const quotediv = document.getElementById("quote");
 const nextquote = document.getElementById("nextquote");
 
-document.addEventListener("click" , function updatePage() {
+nextquote.addEventListener("click" , function updatePage() {
   fetch(quotes)
     .then((resp) => resp.json())
     .then((data) => displayQuote(data));
